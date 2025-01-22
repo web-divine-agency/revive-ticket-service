@@ -1,8 +1,8 @@
 module.exports = {
   apps: [
     {
-      name: "01-UserService",
-      namespace: "revive-user-service",
+      name: "02-TicketService",
+      namespace: "revive-ticket-service",
       script: "./src/index.js",
       watch: ["./src", "./src/*.js"],
       output: "./logs/out.log",
