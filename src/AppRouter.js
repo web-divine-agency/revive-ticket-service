@@ -5,7 +5,8 @@ import bodyParser from "body-parser";
 import { app } from "./Server.js";
 
 import Controller from "./controllers/Controller.js";
-import TicketTypeController from "./controllers/TicketTypeController.js";
+import TemplateController from "./controllers/TemplateController.js";
+import TemplateCategoryController from "./controllers/TemplateCategoryController.js";
 
 if (process.env.APP_ENV === "dev") {
   app.use(cors());
@@ -25,7 +26,9 @@ app.use("/portal", portal);
  * Admin routes
  */
 app.use("/admin", admin);
-admin.post("/ticket-types", TicketTypeController.create);
+admin.post("/res/templates", TemplateController.create);
+
+admin.post("/res/template-categories", TemplateCategoryController.create);
 
 /**
  * Base routes
