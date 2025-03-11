@@ -1,1 +1,1 @@
-# Revive Pharmacy Tickets Management API
+# Revive Pharmacy Ticket Service

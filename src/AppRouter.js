@@ -26,9 +26,9 @@ app.use("/portal", portal);
  * Admin routes
  */
 app.use("/admin", admin);
-admin.post("/res/templates", TemplateController.create);
+admin.post("/templates", TemplateController.create);
 
-admin.post("/res/template-categories", TemplateCategoryController.create);
+admin.post("/template-categories", TemplateCategoryController.create);
 
 /**
  * Base routes
