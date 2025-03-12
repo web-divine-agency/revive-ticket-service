@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon --exec \"npx eslint && node src/index.js\"",
-    "migrate": "node -r dotenv/config src/database/migration.js"
+    "start": "nodemon --exec \"npx eslint && node src/index.js\""
   },
   "repository": {
     "type": "git",
